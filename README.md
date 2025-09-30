@@ -1,6 +1,8 @@
 # Jarkom-Modul-1-2025-K11
 
-14. Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor.
+Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disediakan untuk mengungkap berbagai serangan yang dilakukan Melkor terhadap Manwe. Setiap soal mensimulasikan skenario keamanan jaringan, mulai dari serangan brute force, pemasangan perangkat berbahaya, pencurian password melalui keystroke, hingga penyebaran file berbahaya di server maupun web.
+
+## 14. Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor.
     
 (link file) nc 10.15.43.32 3401
 
