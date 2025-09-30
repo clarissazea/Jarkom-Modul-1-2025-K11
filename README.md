@@ -190,6 +190,12 @@ d.) Hash dari file pertama:
 e.) Hash dari file kedua:
 
 `cf99990bee6c378cbf56239b3cc88276eec348d82740f84e9d5c343751f82560`
+<img width="1893" height="286" alt="image" src="https://github.com/user-attachments/assets/d312fa62-195c-4450-8ab8-55d2c6cdf399" />
+
+Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
+
+<img width="1463" height="848" alt="image" src="https://github.com/user-attachments/assets/64f08cde-f73b-4603-a518-a938c34fad01" />
+
 
 
 
