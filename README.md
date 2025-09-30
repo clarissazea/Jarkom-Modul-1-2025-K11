@@ -197,13 +197,29 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 <img width="1463" height="848" alt="image" src="https://github.com/user-attachments/assets/64f08cde-f73b-4603-a518-a938c34fad01" />
 
 
-
-
-
-
-
 19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
 	(link file) nc 10.15.43.32 3406
+
+a.) Siapa yang mengirimkan pesan ancaman?
+`Your Life`
+
+Step pertama mencari paket dengan protocol `TCP`.
+
+<img width="1919" height="632" alt="image" src="https://github.com/user-attachments/assets/271571e7-8f45-4631-b0a5-2a06b152b5dc" />
+
+Ketika difollow, muncul identitas pengirim dan isi pesan yang dikirimkan. 
+```
+MAIL FROM: <YourLife36@7162.com>
+RCPT TO: <ikwlngpoh@yahoo.com>
+```
+
+<img width="1357" height="738" alt="image" src="https://github.com/user-attachments/assets/9b16f72a-cce2-4f40-ac41-2a6051dd8df4" />
+
+Isi pesan yang dikirimkan oleh user `Your Life` mengandung ancaman. Pesan menyebutkan bahwa pengirim telah menginstal malware/RAT di perangkat korban. Disebutkan pula bahwa pengirim mengakses password, webcam, data pribadi, dan video korban. Ada ancaman eksplisit pula, jika korban tidak membayar (biasanya dengan Bitcoin), maka data pribadi dan video akan dipublikasikan ke kontak dan media sosial.
+
+<img width="1919" height="1043" alt="image" src="https://github.com/user-attachments/assets/50828117-4921-4092-9472-450f80e4bcc4" />
+
+b.)
 
 20.) Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
 (link file) nc 10.15.43.32 3407
