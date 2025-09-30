@@ -238,9 +238,9 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 20.) Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
 (link file) nc 10.15.43.32 3407
 
-a.)
+a.) Metode enkripsi apa yang digunakan?
 
-b.) 
+b.) Apa nama file berbahaya yang ditempatkan oleh penyerang?
 
 Step pertama, buka `File` lalu export object untuk `HTTP`
 <img width="1539" height="979" alt="image" src="https://github.com/user-attachments/assets/649ef7aa-7136-411b-b85d-76d5cb285e55" />
@@ -253,8 +253,17 @@ Sehingga, kita bisa memasukkan file `keyslogfile` yang berada dalam folder `Melk
 
 <img width="427" height="579" alt="image" src="https://github.com/user-attachments/assets/272871f0-8bbd-4b34-a0c1-59611fb149fd" />
 
+Masukkan file `keyslogfile` lalu `OK`
+
+Kemudian, kembali ke export object `HTTP`
+<img width="1919" height="595" alt="image" src="https://github.com/user-attachments/assets/d5d7ce01-ab1b-4c9b-b894-66833528db5c" />
+
 
 <img width="1137" height="623" alt="image" src="https://github.com/user-attachments/assets/f99ec0a6-3864-44c6-8296-3cb8e4567b6d" />
+
+
+c.) <img width="1696" height="460" alt="image" src="https://github.com/user-attachments/assets/77122a12-edfe-4f7f-b162-af8b331869e9" />
+
 
 
 
