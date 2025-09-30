@@ -241,7 +241,8 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 a.) Metode enkripsi apa yang digunakan? 
 
 Jawaban: `TLS`
-Trafik di dalam `MelkorPlan5` tidak berjalan sebagai teks biasa (cleartext) seperti `SMTP/HTTP` sebelumnya, tetapi melalui protokol terenkripsi (bukan MAIL FROM/DATA atau HTTP/1.1 GET yang bisa dibaca). Dari pola port yang digunakan dan payload yang tidak dapat dibaca langsung, dapat dipastikan bahwa metode enkripsi yang dipakai adalah:
+Trafik di dalam `MelkorPlan5` tidak berjalan sebagai teks biasa (cleartext) seperti `SMTP/HTTP` sebelumnya, tetapi melalui protokol terenkripsi (bukan `MAIL FROM/DATA` atau `HTTP/1.1 GET` yang bisa dibaca). Dari pola port yang digunakan dan payload yang tidak dapat dibaca langsung, dapat dipastikan bahwa metode enkripsi yang dipakai adalah:
+
 <img width="603" height="333" alt="image" src="https://github.com/user-attachments/assets/b375a170-25d6-439c-a542-8d2941bd632c" />
 
 
