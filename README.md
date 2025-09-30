@@ -112,6 +112,9 @@ g.) t: `10ce4b79180a2ddd924fdc95951d968191af2ee3b7dfc96dd6a5714dbeae613a`
 
 <img width="1180" height="120" alt="image" src="https://github.com/user-attachments/assets/4393fc81-3b37-4315-8002-24225c7fbf72" />
 
+Hasil pertanyaan (hasil hash) diatas menghasilkan sebuah flag seperti gambar dibawah:
+
+<img width="1508" height="933" alt="image" src="https://github.com/user-attachments/assets/4cf9aeed-7db1-45c1-8c80-ec38226c2e4a" />
 
 
 
