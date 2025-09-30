@@ -155,6 +155,8 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 18.) Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
 (link file) nc 10.15.43.32 3405
 
+<img width="1919" height="852" alt="image" src="https://github.com/user-attachments/assets/99383e7e-e74b-43dd-b456-c206d67f5b92" />
+
 19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
 	(link file) nc 10.15.43.32 3406
 
