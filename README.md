@@ -93,7 +93,8 @@ d.) w
 
 
 e.) e
-<img width="1919" height="797" alt="image" src="https://github.com/user-attachments/assets/1b3ba0c1-3378-4888-9644-0f3107f85192" />
+<img width="1919" height="784" alt="image" src="https://github.com/user-attachments/assets/11915904-e17b-4306-b973-b9c29075a9e1" />
+
 
 f.) r
 <img width="1915" height="747" alt="image" src="https://github.com/user-attachments/assets/bf498645-ea66-4d2f-aa8b-23dd42294385" />
