@@ -87,7 +87,19 @@ Di terminal, jalankan `sha256sum namafile.txt` untuk menghitung nilai hash SHAâ€
 
 <img width="1537" height="450" alt="image" src="https://github.com/user-attachments/assets/5bf5a18b-63c3-4256-bcb1-d8bb38a34a14" />
 
+d.) w
 
+<img width="1919" height="627" alt="image" src="https://github.com/user-attachments/assets/5f75fdee-2721-48c1-9124-339ec62cc7d7" />
+
+
+e.) e
+<img width="1919" height="797" alt="image" src="https://github.com/user-attachments/assets/1b3ba0c1-3378-4888-9644-0f3107f85192" />
+
+f.) r
+<img width="1915" height="747" alt="image" src="https://github.com/user-attachments/assets/bf498645-ea66-4d2f-aa8b-23dd42294385" />
+
+g.) t 
+<img width="1919" height="742" alt="image" src="https://github.com/user-attachments/assets/fd17495b-0bea-4bb1-b8f8-0e398e0a60a6" />
 
 
 
