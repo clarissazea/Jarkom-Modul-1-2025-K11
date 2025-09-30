@@ -238,7 +238,9 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 20.) Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
 (link file) nc 10.15.43.32 3407
 
-a.) Metode enkripsi apa yang digunakan?
+a.) Metode enkripsi apa yang digunakan? `TLS`
+<img width="603" height="333" alt="image" src="https://github.com/user-attachments/assets/b375a170-25d6-439c-a542-8d2941bd632c" />
+
 
 b.) Apa nama file berbahaya yang ditempatkan oleh penyerang?: ` invest_20.dll`
 
@@ -268,6 +270,8 @@ c.) Hash dari file yang mengandung malware (` invest_20.dll`) menggunakan `sha25
 
 <img width="1696" height="460" alt="image" src="https://github.com/user-attachments/assets/77122a12-edfe-4f7f-b162-af8b331869e9" />
 
+Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 
+<img width="1919" height="924" alt="image" src="https://github.com/user-attachments/assets/004f7085-84f2-4862-800c-6e4d2da36722" />
 
 
