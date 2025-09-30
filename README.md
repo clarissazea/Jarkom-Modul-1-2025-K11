@@ -131,9 +131,11 @@ Lihat pada file `MelkorPlan2`, dan di bagian export object pilih `HTTP`
 
 <img width="1918" height="821" alt="image" src="https://github.com/user-attachments/assets/035b5d00-46d5-4025-b8bc-6ebbce073587" />
 
-Nama file berada antara 3 file dibawah
+Nama file berada antara 3 file dibawah:
 
 <img width="1150" height="269" alt="image" src="https://github.com/user-attachments/assets/6c179e7d-146c-4b55-b628-f9f27371febd" />
+
+Setelah beberapa percobaan, file yang mengandung malware adalah `Invoice&MSO-Request.doc`
 
 <img width="770" height="534" alt="image" src="https://github.com/user-attachments/assets/53d49852-50b3-49c2-b4b0-6cb2cc1a5d12" />
 
@@ -142,7 +144,7 @@ b.) Nama file mencurigarakan kedua
 <img width="800" height="109" alt="image" src="https://github.com/user-attachments/assets/2c07cfd7-67bc-4970-a535-f3d4c9f2e887" />
 
 
-c.) Hash dari `knr.exe` 
+c.) Hash dari `knr.exe` menggunakan `sha256shum`
 
 `749e161661290e8a2d190b1a66469744127bc25bf46e5d0c6f2e835f4b92db18`
 <img width="1896" height="539" alt="image" src="https://github.com/user-attachments/assets/f51dded4-98fb-4ecb-8cd1-424dde78603b" />
@@ -158,7 +160,9 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 ### 18.) Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
 `nc 10.15.43.32 3405`
 
-a.) Berapa banyak file yang mengandung malware? `2`
+a.) Berapa banyak file yang mengandung malware? 
+
+Jawaban: `2`
 
 Lihat pada file `MelkorPlan3`, dan di bagian export object pilih `SMB`
 
@@ -168,6 +172,7 @@ Setelah dibuka, muncul 7 file SMB dan ada beberapa file yang mengandung malware.
 
 <img width="1919" height="550" alt="image" src="https://github.com/user-attachments/assets/a773340b-1c36-4448-be11-2f446168a621" />
 
+Yang mencurigakan: 
 `\\WINDOWS\d0p2nc6ka3f.fixh0lhyg4voyfcy_smc2ho_u083urjpphnwlahjwhv_o5c0vf6.exe` : suspicious .exe (nama acak, panjang, indikasi obfuscation).
 
 `\\WINDOWS\oiku9bu68cxqenfmcso2aek6t07_guuisqxlnliv8dx2eemqdnhvhyl46l8n.di.exe` : suspicious .exe (juga nama acak, panjang, tidak wajar).
@@ -185,12 +190,12 @@ b.) Nama file pertama yang mengandung malware/mencurigakan: `d0p2nc6ka3f_fixhohl
 c.) Nama file kedua yang mengandung malware/mencurigakan: `oiku9bu68cxqenfmcsos2aek6t07_guuisgxhllixv8dx2eemqddnhyh46l8n_di.exe`
 <img width="1158" height="113" alt="image" src="https://github.com/user-attachments/assets/51aa51e8-685c-4706-a3b6-0cf7f03c4e2b" />
 
-d.) Hash dari file pertama:
+d.) Hash dari file pertama menggunakan `sha256sum`
 
 `59896ae5f3edcb999243c7bfdc0b17eb7fe28f3a66259d797386ea470c010040`
 <img width="1898" height="481" alt="image" src="https://github.com/user-attachments/assets/29df5cd9-5a6e-4f36-8d2b-801c0e0985e7" />
 
-e.) Hash dari file kedua:
+e.) Hash dari file kedua menggunakan `sha256sum`
 
 `cf99990bee6c378cbf56239b3cc88276eec348d82740f84e9d5c343751f82560`
 <img width="1893" height="286" alt="image" src="https://github.com/user-attachments/assets/d312fa62-195c-4450-8ab8-55d2c6cdf399" />
@@ -204,7 +209,7 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 `nc 10.15.43.32 3406`
 
 a.) Siapa yang mengirimkan pesan ancaman?
-`Your Life`
+Jawaban: `Your Life`
 
 Step pertama mencari paket dengan protocol `TCP`.
 
@@ -218,18 +223,19 @@ RCPT TO: <ikwlngpoh@yahoo.com>
 
 <img width="1357" height="738" alt="image" src="https://github.com/user-attachments/assets/9b16f72a-cce2-4f40-ac41-2a6051dd8df4" />
 
-Isi pesan yang dikirimkan oleh user `Your Life` mengandung ancaman. Pesan menyebutkan bahwa pengirim telah menginstal malware/RAT di perangkat korban. Disebutkan pula bahwa pengirim mengakses password, webcam, data pribadi, dan video korban. Ada ancaman eksplisit pula, jika korban tidak membayar (biasanya dengan Bitcoin), maka data pribadi dan video akan dipublikasikan ke kontak dan media sosial.
+Isi pesan yang dikirimkan oleh user `Your Life` mengandung ancaman. Pesan menyebutkan bahwa pengirim telah menginstal malware/RAT di perangkat korban. Disebutkan pula bahwa pengirim mengakses password, webcam, data pribadi, dan video korban. Ada ancaman eksplisit pula, jika korban tidak membayar (biasanya dengan `Bitcoin`), maka data pribadi dan video akan dipublikasikan ke kontak dan media sosial.
 
 <img width="1919" height="1043" alt="image" src="https://github.com/user-attachments/assets/50828117-4921-4092-9472-450f80e4bcc4" />
 
 b.) Berapa banyak uang tebusan yang diminta attacker?
-`1600$`
+
+Jawaban: `1600$`
 <img width="1117" height="131" alt="image" src="https://github.com/user-attachments/assets/97330beb-6e39-48b0-b519-2432d277c82a" />
 
-User `Your Life` menuliskan sendiri cara menghentikan serangan/ancaman dengan memberi uang tebusan (bitcoin) sebanyak 1600 dalam waktu 4 hari saja.
+User `Your Life` menuliskan sendiri cara menghentikan serangan/ancaman dengan memberi uang tebusan (bitcoin) sebanyak `1600` dalam waktu 4 hari saja.
 
 c.) Dompet bitcoin milik attacker?
-`1CWHmuF8dHt7HBGx5RKKLgg9QA2GmE3UyL`
+Jawaban: `1CWHmuF8dHt7HBGx5RKKLgg9QA2GmE3UyL`
 <img width="756" height="277" alt="image" src="https://github.com/user-attachments/assets/d15a563b-69b5-4c0e-9ac7-a822695cd447" />
 
 User `Your Life` juga mencantumkan dompet bitcoin miliknya untuk pembayaran.
@@ -249,14 +255,15 @@ Trafik di dalam `MelkorPlan5` tidak berjalan sebagai teks biasa (cleartext) sepe
 <img width="603" height="333" alt="image" src="https://github.com/user-attachments/assets/b375a170-25d6-439c-a542-8d2941bd632c" />
 
 
-b.) Apa nama file berbahaya yang ditempatkan oleh penyerang?: ` invest_20.dll`
+b.) Apa nama file berbahaya yang ditempatkan oleh penyerang?: 
+Jawbaan: `invest_20.dll`
 
 Step pertama, buka `File` lalu export object untuk `HTTP`
 <img width="1539" height="979" alt="image" src="https://github.com/user-attachments/assets/649ef7aa-7136-411b-b85d-76d5cb285e55" />
 
 <img width="1234" height="888" alt="image" src="https://github.com/user-attachments/assets/76240094-4e80-4797-b7df-d22b99ff2a0f" />
 
-Hasil yang ditampilkan kosong, artinya protokol TLS harus memasukkan password terlebih dahulu. (TLS adalah protokol yang menyediakan confidentiality (enkripsi), integrity dan authentication.)
+Hasil yang ditampilkan kosong, artinya protokol `TLS` harus memasukkan password terlebih dahulu. (TLS adalah protokol yang menyediakan confidentiality (enkripsi), integrity dan authentication.)
 
 Sehingga, kita bisa memasukkan file `keyslogfile` yang berada dalam folder `MelkorPlan5`. Dengan cara tekan menu `Edit` ---> `Preferences` ---> Pilih `protocol` lalu `TLS`.
 
