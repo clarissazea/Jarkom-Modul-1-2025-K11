@@ -129,9 +129,12 @@ Nama file berada antara 3 file dibawah
 
 <img width="1150" height="269" alt="image" src="https://github.com/user-attachments/assets/6c179e7d-146c-4b55-b628-f9f27371febd" />
 
-<img width="851" height="567" alt="image" src="https://github.com/user-attachments/assets/f1bbc9b9-2531-4be7-a10c-33b32802542a" />
+<img width="770" height="534" alt="image" src="https://github.com/user-attachments/assets/53d49852-50b3-49c2-b4b0-6cb2cc1a5d12" />
 
 b.) Nama file mencurigarakan kedua
+
+<img width="800" height="109" alt="image" src="https://github.com/user-attachments/assets/2c07cfd7-67bc-4970-a535-f3d4c9f2e887" />
+
 
 c.) Hash dari `knr.exe` 
 
