@@ -240,7 +240,7 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 
 a.) Metode enkripsi apa yang digunakan?
 
-b.) Apa nama file berbahaya yang ditempatkan oleh penyerang?
+b.) Apa nama file berbahaya yang ditempatkan oleh penyerang?: ` invest_20.dll`
 
 Step pertama, buka `File` lalu export object untuk `HTTP`
 <img width="1539" height="979" alt="image" src="https://github.com/user-attachments/assets/649ef7aa-7136-411b-b85d-76d5cb285e55" />
@@ -255,14 +255,18 @@ Sehingga, kita bisa memasukkan file `keyslogfile` yang berada dalam folder `Melk
 
 Masukkan file `keyslogfile` lalu `OK`
 
-Kemudian, kembali ke export object `HTTP`
-<img width="1919" height="595" alt="image" src="https://github.com/user-attachments/assets/d5d7ce01-ab1b-4c9b-b894-66833528db5c" />
-
-
 <img width="1137" height="623" alt="image" src="https://github.com/user-attachments/assets/f99ec0a6-3864-44c6-8296-3cb8e4567b6d" />
 
+Kemudian, kembali ke export object `HTTP` dan mencari file berbahaya tersebut
+<img width="1919" height="595" alt="image" src="https://github.com/user-attachments/assets/d5d7ce01-ab1b-4c9b-b894-66833528db5c" />
 
-c.) <img width="1696" height="460" alt="image" src="https://github.com/user-attachments/assets/77122a12-edfe-4f7f-b162-af8b331869e9" />
+Terdapat beberapa file dan setelah beberapa percobaan, file yang berbahaya (mengandung malware) adalah file ` invest_20.dll`
+<img width="1919" height="451" alt="image" src="https://github.com/user-attachments/assets/13eef271-c785-4e04-9e84-48f9c8e058c2" />
+
+
+c.) Hash dari file yang mengandung malware (` invest_20.dll`) menggunakan `sha256`
+
+<img width="1696" height="460" alt="image" src="https://github.com/user-attachments/assets/77122a12-edfe-4f7f-b162-af8b331869e9" />
 
 
 
