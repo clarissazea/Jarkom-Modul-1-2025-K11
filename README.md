@@ -19,10 +19,25 @@ Sehingga, untuk mencari user yang bisa login dengan sukses (diantara 500358 pake
 
 <img width="982" height="544" alt="image" src="https://github.com/user-attachments/assets/b13d26cb-a12d-4841-b0ff-24d9affcd8fa" />
 Sehingga ketemu,
-user: n1enna
-password: y4v4nn4_k3m3nt4r1
+
+- user: n1enna
+- password: y4v4nn4_k3m3nt4r1
 
 <img width="1919" height="549" alt="image" src="https://github.com/user-attachments/assets/b652f46c-f447-4d4f-b01a-0f1618ae1add" />
+
+c.) Username dan password tersebut muncul pada stream 41824 (berada di pojok kanan bawah)
+
+<img width="1263" height="815" alt="image" src="https://github.com/user-attachments/assets/745960a9-1f44-46b7-8b0b-1543ebfd76c2" />
+
+d.) Tools yang digunakan untuk brute force adalah `Fuzz Faster U Fool v2.1.0-dev`
+
+`ffuf` dipakai untuk menemukan direktori tersembunyi, file, parameter, atau melakukan brute-force nilai (mis. username/password) dengan mengirim banyak request HTTP paralel menggunakan wordlist/payloads.
+
+<img width="627" height="221" alt="image" src="https://github.com/user-attachments/assets/26d2e8b1-0885-4b00-9647-48be261a244e" />
+
+Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
+
+<img width="1359" height="706" alt="image" src="https://github.com/user-attachments/assets/838e0357-f75d-48c2-a746-31e3d309bba4" />
 
 
 
