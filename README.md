@@ -184,6 +184,15 @@ c.) Nama file kedua yang mengandung malware/mencurigakan: `oiku9bu68cxqenfmcsos2
 
 d.) Hash dari file pertama:
 
+`59896ae5f3edcb999243c7bfdc0b17eb7fe28f3a66259d797386ea470c010040`
+<img width="1898" height="481" alt="image" src="https://github.com/user-attachments/assets/29df5cd9-5a6e-4f36-8d2b-801c0e0985e7" />
+
+e.) Hash dari file kedua:
+
+`cf99990bee6c378cbf56239b3cc88276eec348d82740f84e9d5c343751f82560`
+
+
+
 
 
 
