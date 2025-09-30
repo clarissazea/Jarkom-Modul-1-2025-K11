@@ -7,6 +7,7 @@ Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disedi
 `nc 10.15.43.32 3401`
 
 a.) Jumlah seluruh paket dalam shortbf adalah 
+
 Jawaban: `500358` (`ctrl a`)
 
 <img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/90f89427-1805-4ca8-ad4c-e8f7afcc6c3e" />
