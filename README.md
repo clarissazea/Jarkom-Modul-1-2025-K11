@@ -2,9 +2,9 @@
 
 Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disediakan untuk mengungkap berbagai serangan yang dilakukan Melkor terhadap Manwe. Setiap soal mensimulasikan skenario keamanan jaringan, mulai dari serangan brute force, pemasangan perangkat berbahaya, pencurian password melalui keystroke, hingga penyebaran file berbahaya di server maupun web.
 
-## 14. Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor.
+### 14. Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor.
     
-(link file) nc 10.15.43.32 3401
+`nc 10.15.43.32 3401`
 
 a.) Jumlah seluruh paket dalam shortbf adalah 500358
 <img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/90f89427-1805-4ca8-ad4c-e8f7afcc6c3e" />
