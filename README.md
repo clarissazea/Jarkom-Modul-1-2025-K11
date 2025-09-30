@@ -169,11 +169,12 @@ Setelah dibuka, muncul 7 file SMB dan ada beberapa file yang mengandung malware.
 
 `\\WINDOWS\oiku9bu68cxqenfmcso2aek6t07_guuisqxlnliv8dx2eemqdnhvhyl46l8n.di.exe` : suspicious .exe (juga nama acak, panjang, tidak wajar).
 
-
 File .exe dengan nama acak (sangat mencurigakan), karena:
 - Lokasi di \WINDOWS\ tapi nama tidak sesuai pola file sistem normal.
 - Nama panjang tetapi random string (ciri khas file hasil dropper atau malware)
 - Ekstensi .exe → executable, berpotensi berbahaya.
+
+<img width="822" height="315" alt="image" src="https://github.com/user-attachments/assets/7ceeb8a8-bfc1-4759-93ac-57d3587395b2" />
 
 
 19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
