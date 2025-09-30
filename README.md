@@ -69,9 +69,25 @@ b.) File yang ter-suspected untuk berisi malware adalah sebanyak 5 file (q, w, e
 
 <img width="842" height="329" alt="image" src="https://github.com/user-attachments/assets/8488f651-cbe0-462f-8ae8-c75a622add4b" />
 
-c.) Hash dari file pertama (q.exe) adalah
+c.) Hash dari file pertama (q.exe) adalah `ca34b0926cdc3242bbfad1c4a0b42cc2750d90db9a272d92cfb6cb7034d2a3bd`
+
+Pertama, kita harus melihat paket dengan protocol FTP-Data dengan size q.exe
 
 <img width="1919" height="642" alt="image" src="https://github.com/user-attachments/assets/6ad8d12e-840a-48af-9d3a-442ce4341647" />
+
+Ketika difollow, akan muncul kode ASCII seperti gambar dibawah
+
+<img width="1283" height="1138" alt="image" src="https://github.com/user-attachments/assets/744488e6-c5e2-4edc-9ee6-13ae689d5ae2" />
+
+Lalu ubah menjadi `Raw` dan simpan di folder `MelkorPlan1`
+
+<img width="1319" height="1121" alt="image" src="https://github.com/user-attachments/assets/2acc331b-ec67-44b5-9371-21dc1ae03568" />
+
+Di terminal, jalankan `sha256sum namafile.txt` untuk menghitung nilai hash SHA‑256 dari sebuah file.
+
+<img width="1537" height="450" alt="image" src="https://github.com/user-attachments/assets/5bf5a18b-63c3-4256-bcb1-d8bb38a34a14" />
+
+
 
 
 
