@@ -6,7 +6,7 @@ Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disedi
     
 `nc 10.15.43.32 3401`
 
-a.) Jumlah seluruh paket dalam shortbf adalah 500358
+a.) Jumlah seluruh paket dalam shortbf adalah 500358 (`ctrl a`)
 <img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/90f89427-1805-4ca8-ad4c-e8f7afcc6c3e" />
 
 b.) User yang login dengan sukses bisa kita cari dengan memfilter paket `http`. Kemudian kita membaca paket dengan metode `POST /login` satu-persatu yang memiliki info login success. 
@@ -22,12 +22,14 @@ Sehingga, untuk mencari user yang bisa login dengan sukses (diantara 500358 pake
 <img width="982" height="544" alt="image" src="https://github.com/user-attachments/assets/b13d26cb-a12d-4841-b0ff-24d9affcd8fa" />
 Sehingga ketemu,
 
+```
 - user: n1enna
 - password: y4v4nn4_k3m3nt4r1
+```
 
 <img width="1919" height="549" alt="image" src="https://github.com/user-attachments/assets/b652f46c-f447-4d4f-b01a-0f1618ae1add" />
 
-c.) Username dan password tersebut muncul pada stream 41824 (berada di pojok kanan bawah)
+c.) Username dan password tersebut muncul pada stream `41824` (berada di pojok kanan bawah)
 
 <img width="1263" height="815" alt="image" src="https://github.com/user-attachments/assets/745960a9-1f44-46b7-8b0b-1543ebfd76c2" />
 
@@ -43,17 +45,19 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 
 
 
-15. Melkor menyusup ke ruang server dan memasang keyboard USB berbahaya pada node Manwe. Buka file capture dan identifikasi pesan atau ketikan (keystrokes) yang berhasil dicuri oleh Melkor untuk menemukan password rahasia.
+### 15. Melkor menyusup ke ruang server dan memasang keyboard USB berbahaya pada node Manwe. Buka file capture dan identifikasi pesan atau ketikan (keystrokes) yang berhasil dicuri oleh Melkor untuk menemukan password rahasia.
     
-(link file) nc 10.15.43.32 3402
+`nc 10.15.43.32 3402`
 
-16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
-	(link file) nc 10.15.43.32 3403
+### 16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
+`nc 10.15.43.32 3403`
 
 a.) Credential yang attacker pakai untuk login adalah 
 
+```
 - USER ind@psg420.com
 - PASS {6r_6e#TfT1p
+```
   
 <img width="1919" height="594" alt="image" src="https://github.com/user-attachments/assets/04f2a13a-f3cd-4f26-a079-9ad58caf588a" />
 
@@ -63,7 +67,7 @@ Bisa karena attacker atau server menutup koneksi dengan cara tidak normal (misal
 
 <img width="802" height="514" alt="image" src="https://github.com/user-attachments/assets/6c09ab2b-d14f-4e3e-a411-fb37c935063c" />
 
-b.) File yang ter-suspected untuk berisi malware adalah sebanyak 5 file (q, w, e, r, t)
+b.) File yang ter-suspected untuk berisi malware adalah sebanyak 5 file `(q, w, e, r, t)`
 
 <img width="724" height="611" alt="image" src="https://github.com/user-attachments/assets/38a6a58c-093e-4bbd-956e-cfb4cd54978a" />
 
@@ -73,7 +77,7 @@ b.) File yang ter-suspected untuk berisi malware adalah sebanyak 5 file (q, w, e
 
 c.) Hash dari file pertama (q.exe) adalah `ca34b0926cdc3242bbfad1c4a0b42cc2750d90db9a272d92cfb6cb7034d2a3bd`
 
-Pertama, kita harus melihat paket dengan protocol FTP-Data dengan size q.exe
+Pertama, kita harus melihat paket dengan protocol FTP-Data dengan `size q.exe`
 
 <img width="1919" height="642" alt="image" src="https://github.com/user-attachments/assets/6ad8d12e-840a-48af-9d3a-442ce4341647" />
 
@@ -118,8 +122,8 @@ Hasil pertanyaan (hasil hash) diatas menghasilkan sebuah flag seperti gambar dib
 
 <img width="1508" height="933" alt="image" src="https://github.com/user-attachments/assets/4cf9aeed-7db1-45c1-8c80-ec38226c2e4a" />
 
-17.)  Manwe membuat halaman web di node-nya yang menampilkan gambar cincin agung. Melkor yang melihat web tersebut merasa iri sehingga ia meletakkan file berbahaya agar web tersebut dapat dianggap menyebarkan malware oleh Eru. Analisis file capture untuk menggagalkan rencana Melkor dan menyelamatkan web Manwe.
-(link file) nc 10.15.43.32 3404
+### 17.)  Manwe membuat halaman web di node-nya yang menampilkan gambar cincin agung. Melkor yang melihat web tersebut merasa iri sehingga ia meletakkan file berbahaya agar web tersebut dapat dianggap menyebarkan malware oleh Eru. Analisis file capture untuk menggagalkan rencana Melkor dan menyelamatkan web Manwe.
+`nc 10.15.43.32 3404`
 
 a.) Nama file mencurigakan pertama 
 
@@ -151,11 +155,8 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 
 
 
-
-
-
-18.) Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
-(link file) nc 10.15.43.32 3405
+### 18.) Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
+`nc 10.15.43.32 3405`
 
 a.) Berapa banyak file yang mengandung malware? `2`
 
@@ -199,8 +200,8 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 <img width="1463" height="848" alt="image" src="https://github.com/user-attachments/assets/64f08cde-f73b-4603-a518-a938c34fad01" />
 
 
-19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
-	(link file) nc 10.15.43.32 3406
+### 19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
+`nc 10.15.43.32 3406`
 
 a.) Siapa yang mengirimkan pesan ancaman?
 `Your Life`
@@ -237,8 +238,8 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 <img width="1270" height="472" alt="image" src="https://github.com/user-attachments/assets/9a9ebdcd-6379-448d-bed9-9aaba6e99e6c" />
 
 
-20.) Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
-(link file) nc 10.15.43.32 3407
+### 20.) Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
+`nc 10.15.43.32 3407`
 
 a.) Metode enkripsi apa yang digunakan? 
 
