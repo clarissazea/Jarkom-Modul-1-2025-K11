@@ -41,8 +41,11 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 
 
 
-16. Melkor menyusup ke ruang server dan memasang keyboard USB berbahaya pada node Manwe. Buka file capture dan identifikasi pesan atau ketikan (keystrokes) yang berhasil dicuri oleh Melkor untuk menemukan password rahasia.
+15. Melkor menyusup ke ruang server dan memasang keyboard USB berbahaya pada node Manwe. Buka file capture dan identifikasi pesan atau ketikan (keystrokes) yang berhasil dicuri oleh Melkor untuk menemukan password rahasia.
+    
 (link file) nc 10.15.43.32 3402
+
+a.)
 
 17. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
 	(link file) nc 10.15.43.32 3403
