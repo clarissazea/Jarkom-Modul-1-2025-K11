@@ -69,6 +69,10 @@ b.) File yang ter-suspected untuk berisi malware adalah sebanyak 5 file (q, w, e
 
 <img width="842" height="329" alt="image" src="https://github.com/user-attachments/assets/8488f651-cbe0-462f-8ae8-c75a622add4b" />
 
+c.) Hash dari file pertama (q.exe) adalah
+
+<img width="1919" height="642" alt="image" src="https://github.com/user-attachments/assets/6ad8d12e-840a-48af-9d3a-442ce4341647" />
+
 
 
 
