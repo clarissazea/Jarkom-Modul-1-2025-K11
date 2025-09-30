@@ -176,6 +176,16 @@ File .exe dengan nama acak (sangat mencurigakan), karena:
 
 <img width="822" height="315" alt="image" src="https://github.com/user-attachments/assets/7ceeb8a8-bfc1-4759-93ac-57d3587395b2" />
 
+b.) Nama file pertama yang mengandung malware/mencurigakan: `d0p2nc6ka3f_fixhohlycj4ovqfcy_smchzo_ub83urjpphrwahjwhv_o5c0fvf6.exe`
+<img width="1103" height="126" alt="image" src="https://github.com/user-attachments/assets/b8e855cd-5ba5-4c4c-ae2f-7c9bbd13b685" />
+
+c.) Nama file kedua yang mengandung malware/mencurigakan: `oiku9bu68cxqenfmcsos2aek6t07_guuisgxhllixv8dx2eemqddnhyh46l8n_di.exe`
+<img width="1158" height="113" alt="image" src="https://github.com/user-attachments/assets/51aa51e8-685c-4706-a3b6-0cf7f03c4e2b" />
+
+d.) Hash dari file pertama:
+
+
+
 
 19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
 	(link file) nc 10.15.43.32 3406
