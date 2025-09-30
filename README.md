@@ -87,20 +87,31 @@ Di terminal, jalankan `sha256sum namafile.txt` untuk menghitung nilai hash SHAâ€
 
 <img width="1537" height="450" alt="image" src="https://github.com/user-attachments/assets/5bf5a18b-63c3-4256-bcb1-d8bb38a34a14" />
 
-d.) w
+d.) w: `08eb941447078ef2c6ad8d91bb2f52256c09657ecd3d5344023edccf7291e9fc` 
 
 <img width="1919" height="627" alt="image" src="https://github.com/user-attachments/assets/5f75fdee-2721-48c1-9124-339ec62cc7d7" />
 
+<img width="1113" height="132" alt="image" src="https://github.com/user-attachments/assets/f8eede30-9cf3-49ab-9726-571bea7ddbd1" />
 
-e.) e
+
+
+e.) e: `32e1b3732cd779af1bf7730d0ec8a7a87a084319f6a0870dc7362a15ddbd3199`
 <img width="1919" height="784" alt="image" src="https://github.com/user-attachments/assets/11915904-e17b-4306-b973-b9c29075a9e1" />
+<img width="1189" height="126" alt="image" src="https://github.com/user-attachments/assets/8281a417-c084-46b0-912c-b6493b26adf2" />
 
 
-f.) r
+
+f.) r: `4ebd58007ee933a0a8348aee2922904a7110b7fb6a316b1c7fb2c6677e613884`
 <img width="1915" height="747" alt="image" src="https://github.com/user-attachments/assets/bf498645-ea66-4d2f-aa8b-23dd42294385" />
 
-g.) t 
+<img width="1135" height="228" alt="image" src="https://github.com/user-attachments/assets/28c4c7af-b78b-4cb2-8ace-b3cddd750ebf" />
+
+
+g.) t: `10ce4b79180a2ddd924fdc95951d968191af2ee3b7dfc96dd6a5714dbeae613a`
 <img width="1919" height="742" alt="image" src="https://github.com/user-attachments/assets/fd17495b-0bea-4bb1-b8f8-0e398e0a60a6" />
+
+<img width="1180" height="120" alt="image" src="https://github.com/user-attachments/assets/4393fc81-3b37-4315-8002-24225c7fbf72" />
+
 
 
 
