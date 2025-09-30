@@ -116,17 +116,44 @@ Hasil pertanyaan (hasil hash) diatas menghasilkan sebuah flag seperti gambar dib
 
 <img width="1508" height="933" alt="image" src="https://github.com/user-attachments/assets/4cf9aeed-7db1-45c1-8c80-ec38226c2e4a" />
 
-
-
-
-18. Manwe membuat halaman web di node-nya yang menampilkan gambar cincin agung. Melkor yang melihat web tersebut merasa iri sehingga ia meletakkan file berbahaya agar web tersebut dapat dianggap menyebarkan malware oleh Eru. Analisis file capture untuk menggagalkan rencana Melkor dan menyelamatkan web Manwe.
+17.)  Manwe membuat halaman web di node-nya yang menampilkan gambar cincin agung. Melkor yang melihat web tersebut merasa iri sehingga ia meletakkan file berbahaya agar web tersebut dapat dianggap menyebarkan malware oleh Eru. Analisis file capture untuk menggagalkan rencana Melkor dan menyelamatkan web Manwe.
 (link file) nc 10.15.43.32 3404
 
-19. Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
+a.) Nama file mencurigakan pertama 
+
+Lihat pada file `MelkorPlan2`, dan di bagian export object pilih `HTTP`
+
+<img width="1918" height="821" alt="image" src="https://github.com/user-attachments/assets/035b5d00-46d5-4025-b8bc-6ebbce073587" />
+
+Nama file berada antara 3 file dibawah
+
+<img width="1150" height="269" alt="image" src="https://github.com/user-attachments/assets/6c179e7d-146c-4b55-b628-f9f27371febd" />
+
+<img width="851" height="567" alt="image" src="https://github.com/user-attachments/assets/f1bbc9b9-2531-4be7-a10c-33b32802542a" />
+
+b.) Nama file mencurigarakan kedua
+
+c.) Hash dari `knr.exe` 
+
+`749e161661290e8a2d190b1a66469744127bc25bf46e5d0c6f2e835f4b92db18`
+<img width="1896" height="539" alt="image" src="https://github.com/user-attachments/assets/f51dded4-98fb-4ecb-8cd1-424dde78603b" />
+
+
+Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
+
+<img width="1509" height="783" alt="image" src="https://github.com/user-attachments/assets/08eb98b6-1458-4fe0-82dc-d120bca75f6d" />
+
+
+
+
+
+
+
+18.) Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
 (link file) nc 10.15.43.32 3405
 
-20. Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
+19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
 	(link file) nc 10.15.43.32 3406
 
-21. Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
+20.) Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
 (link file) nc 10.15.43.32 3407
