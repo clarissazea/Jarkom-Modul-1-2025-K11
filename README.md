@@ -6,7 +6,9 @@ Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disedi
     
 `nc 10.15.43.32 3401`
 
-a.) Jumlah seluruh paket dalam shortbf adalah 500358 (`ctrl a`)
+a.) Jumlah seluruh paket dalam shortbf adalah 
+Jawaban: `500358` (`ctrl a`)
+
 <img width="1919" height="1130" alt="image" src="https://github.com/user-attachments/assets/90f89427-1805-4ca8-ad4c-e8f7afcc6c3e" />
 
 b.) User yang login dengan sukses bisa kita cari dengan memfilter paket `http`. Kemudian kita membaca paket dengan metode `POST /login` satu-persatu yang memiliki info login success. 
@@ -54,6 +56,7 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 
 a.) Credential yang attacker pakai untuk login adalah 
 
+Jawaban:
 ```
 - USER ind@psg420.com
 - PASS {6r_6e#TfT1p
@@ -67,7 +70,7 @@ Bisa karena attacker atau server menutup koneksi dengan cara tidak normal (misal
 
 <img width="802" height="514" alt="image" src="https://github.com/user-attachments/assets/6c09ab2b-d14f-4e3e-a411-fb37c935063c" />
 
-b.) File yang ter-suspected untuk berisi malware adalah sebanyak 5 file `(q, w, e, r, t)`
+b.) File yang ter-suspected untuk berisi malware adalah sebanyak `5` file `(q, w, e, r, t)`
 
 <img width="724" height="611" alt="image" src="https://github.com/user-attachments/assets/38a6a58c-093e-4bbd-956e-cfb4cd54978a" />
 
