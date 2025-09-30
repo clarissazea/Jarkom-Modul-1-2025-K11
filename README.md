@@ -245,12 +245,16 @@ b.)
 Step pertama, buka `File` lalu export object untuk `HTTP`
 <img width="1539" height="979" alt="image" src="https://github.com/user-attachments/assets/649ef7aa-7136-411b-b85d-76d5cb285e55" />
 
+<img width="1234" height="888" alt="image" src="https://github.com/user-attachments/assets/76240094-4e80-4797-b7df-d22b99ff2a0f" />
+
 Hasil yang ditampilkan kosong, artinya protokol TLS harus memasukkan password terlebih dahulu. (TLS adalah protokol yang menyediakan confidentiality (enkripsi), integrity dan authentication.)
 
 Sehingga, kita bisa memasukkan file `keyslogfile` yang berada dalam folder `MelkorPlan5`. Dengan cara tekan menu `Edit` ---> `Preferences` ---> Pilih `protocol` lalu `TLS`.
 
 <img width="427" height="579" alt="image" src="https://github.com/user-attachments/assets/272871f0-8bbd-4b34-a0c1-59611fb149fd" />
 
-<img width="1234" height="888" alt="image" src="https://github.com/user-attachments/assets/76240094-4e80-4797-b7df-d22b99ff2a0f" />
+
+<img width="1137" height="623" alt="image" src="https://github.com/user-attachments/assets/f99ec0a6-3864-44c6-8296-3cb8e4567b6d" />
+
 
 
