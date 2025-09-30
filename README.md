@@ -155,7 +155,26 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
 18.) Karena rencana Melkor yang terus gagal, ia akhirnya berhenti sejenak untuk berpikir. Pada saat berpikir ia akhirnya memutuskan untuk membuat rencana jahat lainnya dengan meletakkan file berbahaya lagi tetapi dengan metode yang berbeda. Gagalkan lagi rencana Melkor dengan mengidentifikasi file capture yang disediakan agar dunia tetap aman.
 (link file) nc 10.15.43.32 3405
 
+a.) Berapa banyak file yang mengandung malware? `2`
+
+Lihat pada file `MelkorPlan3`, dan di bagian export object pilih `SMB`
+
 <img width="1919" height="852" alt="image" src="https://github.com/user-attachments/assets/99383e7e-e74b-43dd-b456-c206d67f5b92" />
+
+Setelah dibuka, muncul 7 file SMB dan ada beberapa file yang mengandung malware.
+
+<img width="1919" height="550" alt="image" src="https://github.com/user-attachments/assets/a773340b-1c36-4448-be11-2f446168a621" />
+
+`\\WINDOWS\d0p2nc6ka3f.fixh0lhyg4voyfcy_smc2ho_u083urjpphnwlahjwhv_o5c0vf6.exe` : suspicious .exe (nama acak, panjang, indikasi obfuscation).
+
+`\\WINDOWS\oiku9bu68cxqenfmcso2aek6t07_guuisqxlnliv8dx2eemqdnhvhyl46l8n.di.exe` : suspicious .exe (juga nama acak, panjang, tidak wajar).
+
+
+File .exe dengan nama acak (sangat mencurigakan), karena:
+- Lokasi di \WINDOWS\ tapi nama tidak sesuai pola file sistem normal.
+- Nama panjang tetapi random string (ciri khas file hasil dropper atau malware)
+- Ekstensi .exe → executable, berpotensi berbahaya.
+
 
 19.) Manwe mengirimkan email berisi surat cinta kepada Varda melalui koneksi yang tidak terenkripsi. Melihat hal itu Melkor sipaling jahat langsung melancarkan aksinya yaitu meneror Varda dengan email yang disamarkan. Analisis file capture jaringan dan gagalkan lagi rencana busuk Melkor.
 	(link file) nc 10.15.43.32 3406
