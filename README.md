@@ -219,7 +219,21 @@ Isi pesan yang dikirimkan oleh user `Your Life` mengandung ancaman. Pesan menyeb
 
 <img width="1919" height="1043" alt="image" src="https://github.com/user-attachments/assets/50828117-4921-4092-9472-450f80e4bcc4" />
 
-b.)
+b.) Berapa banyak uang tebusan yang diminta attacker?
+`1600$`
+<img width="1117" height="131" alt="image" src="https://github.com/user-attachments/assets/97330beb-6e39-48b0-b519-2432d277c82a" />
+
+User `Your Life` menuliskan sendiri cara menghentikan serangan/ancaman dengan memberi uang tebusan (bitcoin) sebanyak 1600 dalam waktu 4 hari saja.
+
+c.) Dompet bitcoin milik attacker?
+`1CWHmuF8dHt7HBGx5RKKLgg9QA2GmE3UyL`
+<img width="756" height="277" alt="image" src="https://github.com/user-attachments/assets/d15a563b-69b5-4c0e-9ac7-a822695cd447" />
+
+User `Your Life` juga mencantumkan dompet bitcoin miliknya untuk pembayaran.
+
+Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
+<img width="1270" height="472" alt="image" src="https://github.com/user-attachments/assets/9a9ebdcd-6379-448d-bed9-9aaba6e99e6c" />
+
 
 20.) Untuk yang terakhir kalinya, rencana besar Melkor yaitu menanamkan sebuah file berbahaya kemudian menyembunyikannya agar tidak terlihat oleh Eru. Tetapi Manwe yang sudah merasakan adanya niat jahat dari Melkor, ia menyisipkan bantuan untuk mengungkapkan rencana Melkor. Analisis file capture dan identifikasi kegunaan bantuan yang diberikan oleh Manwe untuk menggagalkan rencana jahat Melkor selamanya.
 (link file) nc 10.15.43.32 3407
