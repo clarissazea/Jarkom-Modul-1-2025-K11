@@ -45,19 +45,32 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
     
 (link file) nc 10.15.43.32 3402
 
+16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
+	(link file) nc 10.15.43.32 3403
+
 a.) Credential yang attacker pakai untuk login adalah 
 
 - USER ind@psg420.com
-- PASS 6nf@psg420.com
-
+- PASS {6r_6e#TfT1p
+  
 <img width="1919" height="594" alt="image" src="https://github.com/user-attachments/assets/04f2a13a-f3cd-4f26-a079-9ad58caf588a" />
+
+- RST (Reset) = sinyal TCP untuk memutus koneksi secara paksa.
+- ACK (Acknowledgement) = penanda bahwa sampai titik tertentu data sudah diterima.
+Bisa karena attacker atau server menutup koneksi dengan cara tidak normal (misalnya setelah brute force atau upload file berbahaya, langsung putus).
 
 <img width="802" height="514" alt="image" src="https://github.com/user-attachments/assets/6c09ab2b-d14f-4e3e-a411-fb37c935063c" />
 
+b.) File yang ter-suspected untuk berisi malware adalah sebanyak 5 file (q, w, e, r, t)
+
+<img width="724" height="611" alt="image" src="https://github.com/user-attachments/assets/38a6a58c-093e-4bbd-956e-cfb4cd54978a" />
+
+<img width="830" height="660" alt="image" src="https://github.com/user-attachments/assets/9c4334b8-ecb1-493c-9abe-b28ff2c95a82" />
+
+<img width="842" height="329" alt="image" src="https://github.com/user-attachments/assets/8488f651-cbe0-462f-8ae8-c75a622add4b" />
 
 
-17. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
-	(link file) nc 10.15.43.32 3403
+
 
 18. Manwe membuat halaman web di node-nya yang menampilkan gambar cincin agung. Melkor yang melihat web tersebut merasa iri sehingga ia meletakkan file berbahaya agar web tersebut dapat dianggap menyebarkan malware oleh Eru. Analisis file capture untuk menggagalkan rencana Melkor dan menyelamatkan web Manwe.
 (link file) nc 10.15.43.32 3404
