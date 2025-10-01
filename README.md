@@ -66,6 +66,14 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 10.69.2.1
 </pre>
+untuk mengecek apakah sudah terhubung bisa menggunakan command <pre> ip a </pre> disetiap client dan cek apakah ip seudah sesuai
+
+### 4. Menghubungkan client dengan internet
+untuk menghubungkan internet dapat dilakukan penambahan nameserver yg sesuai dengan server Eru yg bisa di dapat dengan cara berikut
+<img width="368" height="60" alt="image" src="https://github.com/user-attachments/assets/34271a93-fc10-4fba-b739-e84a487c9b60" />
+
+lalu tambahkan nameserver yg didapat dari Eru ke semua client menggunakan echo lalu cek jaringan menggunakan ping seperti berikut
+
 
 
 
