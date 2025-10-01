@@ -82,6 +82,7 @@ a) agar konfigurasi tidak hilang bisa ditambahkan shell di Eru untuk menyimpan c
 <img width="337" height="22" alt="image" src="https://github.com/user-attachments/assets/121b8c3b-deea-4866-ba26-12291d99f0bc" />
 
 b) untuk command penambahan nameserver bisa dilakukan seperti berikut ke semua client, menggunakan EOF untuk mengsave atau mengakhiri shell yg sudah dibuat
+
 <img width="575" height="154" alt="image" src="https://github.com/user-attachments/assets/be99811d-0579-48e9-a14d-be25e58709b0" />
 
 
