@@ -161,6 +161,11 @@ Dari narasi soal, sudah terlihat bahwa device yang melkor pakai adalah `Keyboard
 
 
 Dibuktikan pula pada file pcap `hiddenmsg`, terlihat bahwa paket-paket menggunakan protokol USB dan HID (Human Interface Device). 
+<img width="1919" height="1094" alt="image" src="https://github.com/user-attachments/assets/d13184e2-9cca-48f9-8d53-5dcf7348e41e" />
+
+Ketika salah satu paket destination host di follow, bagian string descriptor muncul USB Keyboard di bString. field bString adalah isi string descriptor yang dikirim perangkat untuk menjelaskan namanya ke host; isi string tersebut jelas: "USB Keyboard".
+
+Pada offset yang ditampilkan ada byte sequence yang bila dipetakan ke ASCII menampilkan `S B - K e y b o a r d` itu adalah representasi string descriptor yang sama (dengan encoding Unicode/UTF-16LE di descriptor USB sehingga bytes menunjukkan huruf-huruf tersebut).
 
 ### 16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
 `nc 10.15.43.32 3403`
