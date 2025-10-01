@@ -157,11 +157,6 @@ Jawaban: `Keyboard`
 
 Dari narasi soal, sudah terlihat bahwa device yang melkor pakai adalah `Keyboard USB` "Melkor menyusup ke ruang server dan memasang keyboard USB berbahaya pada node Manwe."
 
-<img width="1917" height="667" alt="image" src="https://github.com/user-attachments/assets/c0e64899-b18e-42d6-a9c8-7ef81110aad6" />
-
-<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/07507a32-23c2-442d-a7e4-3c8efba11521" />
-
-
 Dibuktikan pula pada file pcap `hiddenmsg`, terlihat bahwa paket-paket menggunakan protokol USB dan HID (Human Interface Device). 
 <img width="1919" height="1094" alt="image" src="https://github.com/user-attachments/assets/d13184e2-9cca-48f9-8d53-5dcf7348e41e" />
 
@@ -177,7 +172,8 @@ Jawaban:
 
 Dari file pcap `hiddenmsg`, kita diminta untuk menemukan teks yang diketik oleh Melkor. Sedangkan, file `.pcapng` tersebut bukan text biasa, tapi kumpulan paket USB HID. Jadi datanya mentah berupa report `8 byte` per keystroke.
 
-<img width="1919" height="1005" alt="image" src="https://github.com/user-attachments/assets/1fda0342-da59-4b5a-9017-7b4640425dc8" />
+
+<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/56a0703f-5027-4a5c-ac34-66046561d005" />
 
 
 Contoh hexdump di wireshark
@@ -187,9 +183,16 @@ Contoh hexdump di wireshark
 ```
 Yang artinya: `modifier=0, reserved=0, keycode=0x04: Huruf a.`
 
+Untuk melihat apa yang melkor tulis, kita harus:
 
-<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/56a0703f-5027-4a5c-ac34-66046561d005" />
+- Klik tiap paket di Wireshark.
+- Lihat field usb.capdata.
+- Mapping tiap keycode ke huruf sesuai tabel HID Usage.
+- Gabungkan jadi string.
 
+Nah, di file `hiddenmsg` terdapat `410` paket, jika kita decode satu per satu manual, sangat tidak praktis.
+
+Lalu, disini kami memakai python (automasi python dan scapy) untuk membaca `.pcapng` langsung, ambil setiap field `usb.capdata`, translate keycode ke huruf, lalu gabungkan.
 
 ### 16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
 `nc 10.15.43.32 3403`
