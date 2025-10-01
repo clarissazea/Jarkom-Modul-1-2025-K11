@@ -2,6 +2,10 @@
 
 Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disediakan untuk mengungkap berbagai serangan yang dilakukan Melkor terhadap Manwe. Setiap soal mensimulasikan skenario keamanan jaringan, mulai dari serangan brute force, pemasangan perangkat berbahaya, pencurian password melalui keystroke, hingga penyebaran file berbahaya di server maupun web.
 
+### 1. 
+<img width="776" height="501" alt="image" src="https://github.com/user-attachments/assets/9889014a-0dc0-4bf0-b38f-a4b4f5b54631" />
+
+
 ### 14. Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor.
     
 `nc 10.15.43.32 3401`
