@@ -74,6 +74,7 @@ untuk menghubungkan internet dapat dilakukan penambahan nameserver yg sesuai den
 
 lalu tambahkan nameserver yg didapat dari Eru ke semua client menggunakan echo lalu cek jaringan menggunakan ping seperti berikut
 <img width="861" height="324" alt="image" src="https://github.com/user-attachments/assets/1ed3d621-afeb-4878-b914-48bd1dea8ce1" />
+
 lakukan hal yg sama ke semua client yg ada
 
 ### 5. Konfigurasi tidak hilang saat node di restart
