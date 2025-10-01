@@ -7,6 +7,28 @@ Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disedi
 Eru yang terhubung ke NAT1 sebagai sumber internet dimana Eru berperan sebagai Router membuat dua Switch/Gateway. Dimana Switch 1 akan menuju ke dua Ainur yaitu Melkor dan Manwe. Sedangkan Switch 2 akan menuju ke dua Ainur lainnya yaitu Varda dan Ulmo. Keempat Ainur tersebut diberi perintah oleh Eru untuk menjadi Client.
 <img width="776" height="501" alt="image" src="https://github.com/user-attachments/assets/9889014a-0dc0-4bf0-b38f-a4b4f5b54631" />
 
+### 2. Menghubungkan Eru ke Internet
+
+lakukan perubahan configurasi pada router Eru seperti ini
+<pre>
+    auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+	address 10.69.1.1
+	netmask 255.255.255.0
+
+auto eth2
+iface eth2 inet static
+	address 10.69.2.1
+	netmask 255.255.255.0
+</pre>
+
+lalu lakukan pengecekan jaringan menggunakan telnet dan <pre> ping google.com -c 5 </pre>
+<img width="1110" height="369" alt="image" src="https://github.com/user-attachments/assets/4d402e81-8b7e-46af-888f-fef410e4825f" />
+
+
 
 ### 14. Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor.
     
