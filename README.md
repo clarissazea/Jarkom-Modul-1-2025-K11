@@ -151,6 +151,17 @@ Hasil pertanyaan diatas menghasilkan sebuah flag seperti gambar dibawah:
     
 `nc 10.15.43.32 3402`
 
+a.) Device apa yang Melkor pakai?
+
+Dari narasi soal, sudah terlihat bahwa device yang melkor pakai adalah `Keyboard USB` "Melkor menyusup ke ruang server dan memasang keyboard USB berbahaya pada node Manwe."
+
+<img width="1917" height="667" alt="image" src="https://github.com/user-attachments/assets/c0e64899-b18e-42d6-a9c8-7ef81110aad6" />
+
+<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/07507a32-23c2-442d-a7e4-3c8efba11521" />
+
+
+Dibuktikan pula pada file pcap `hiddenmsg`, terlihat bahwa paket-paket menggunakan protokol USB dan HID (Human Interface Device). 
+
 ### 16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
 `nc 10.15.43.32 3403`
 
