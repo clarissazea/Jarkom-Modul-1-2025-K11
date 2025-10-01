@@ -73,6 +73,18 @@ untuk menghubungkan internet dapat dilakukan penambahan nameserver yg sesuai den
 <img width="368" height="60" alt="image" src="https://github.com/user-attachments/assets/34271a93-fc10-4fba-b739-e84a487c9b60" />
 
 lalu tambahkan nameserver yg didapat dari Eru ke semua client menggunakan echo lalu cek jaringan menggunakan ping seperti berikut
+<img width="861" height="324" alt="image" src="https://github.com/user-attachments/assets/1ed3d621-afeb-4878-b914-48bd1dea8ce1" />
+lakukan hal yg sama ke semua client yg ada
+
+### 5. Konfigurasi tidak hilang saat node di restart
+a) agar konfigurasi tidak hilang bisa ditambahkan shell di Eru untuk menyimpan command iptables
+<img width="337" height="22" alt="image" src="https://github.com/user-attachments/assets/121b8c3b-deea-4866-ba26-12291d99f0bc" />
+
+b) untuk command penambahan nameserver bisa dilakukan seperti berikut ke semua client, menggunakan EOF untuk mengsave atau mengakhiri shell yg sudah dibuat
+<img width="575" height="154" alt="image" src="https://github.com/user-attachments/assets/be99811d-0579-48e9-a14d-be25e58709b0" />
+
+
+
 
 
 
