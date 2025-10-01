@@ -228,8 +228,8 @@ HID_MAP = {
     0x1e: ('1', '!'), 0x1f: ('2', '@'), 0x20: ('3', '#'), 0x21: ('4', '$'),
     0x22: ('5', '%'), 0x23: ('6', '^'), 0x24: ('7', '&'), 0x25: ('8', '*'),
     0x26: ('9', '('), 0x27: ('0', ')'),
-    0x28: ('\n', '\n'),  # Enter
-    0x2c: (' ', ' '),    # Space
+    0x28: ('\n', '\n'), 
+    0x2c: (' ', ' '),    
     0x2d: ('-', '_'), 0x2e: ('=', '+'), 0x2f: ('[', '{'), 0x30: (']', '}'),
     0x31: ('\\', '|'), 0x33: (';', ':'), 0x34: ("'", '"'), 0x35: ('`', '~'),
     0x36: (',', '<'), 0x37: ('.', '>'), 0x38: ('/', '?')
@@ -252,17 +252,17 @@ def decode_hid_data(pcap_file):
             # Extract last 8 bytes (HID data)
             hid_data = packet.load[-8:]
             
-            # Parse HID report structure
+          
             modifier = hid_data[0]  # Byte 0: Modifier keys
             keycode = hid_data[2]   # Byte 2: Keycode
             
-            # Skip if no key pressed or same as last key (debounce)
+            
             if keycode == 0 or keycode == last_key:
                 continue
                 
             last_key = keycode
             
-            # Check if keycode is in our mapping
+            
             if keycode in HID_MAP:
                 # Check for Shift modifier (0x02 or 0x20)
                 is_shift = (modifier & 0x02) != 0
@@ -287,11 +287,11 @@ def main():
     print("\n" + "="*50)
     print("DECODED MESSAGE:")
     print("="*50)
-    print(result)
+    print(result[1:])
     print("="*50)
     print(f"\nTotal characters: {len(result)}")
     
-    # Save to file
+  
     with open('decoded_message.txt', 'w') as f:
         f.write(result)
     print("\n[✓] Saved to: decoded_message.txt")
@@ -311,6 +311,10 @@ Jawaban: `Plz_pr0v1de_y0ur_us3rn4me_4nd_p4ssw0rd`
 <img width="845" height="789" alt="image" src="https://github.com/user-attachments/assets/2c425ea2-3868-442a-9ba7-9f9b0661fc95" />
 
 Hasil pesan yang dikirim melkor merupakan `base64`, maka kita harus mendecode ulang dan muncul jawaban seperti di gambar.
+
+Pertanyaan diatas menghasilkan flag seperti dibawah:
+<img width="1310" height="462" alt="image" src="https://github.com/user-attachments/assets/705fab4a-5ec6-43ac-b3fc-4705552980cc" />
+
 
 
 ### 16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
