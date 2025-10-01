@@ -171,6 +171,26 @@ Pada offset yang ditampilkan ada byte sequence yang bila dipetakan ke ASCII mena
 
 nformasi ini menjadi bukti langsung bahwa device yang dipasang adalah sebuah `keyboard`.
 
+b.) Apa yang Melkor tulis?
+
+Jawaban: 
+
+Dari file pcap `hiddenmsg`, kita diminta untuk menemukan teks yang diketik oleh Melkor. Sedangkan, file `.pcapng` tersebut bukan text biasa, tapi kumpulan paket USB HID. Jadi datanya mentah berupa report `8 byte` per keystroke.
+
+<img width="1919" height="1005" alt="image" src="https://github.com/user-attachments/assets/1fda0342-da59-4b5a-9017-7b4640425dc8" />
+
+
+Contoh hexdump di wireshark
+
+```
+00 00 04 00 00 00 00 00
+```
+Yang artinya: `modifier=0, reserved=0, keycode=0x04: Huruf a.`
+
+
+<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/56a0703f-5027-4a5c-ac34-66046561d005" />
+
+
 ### 16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
 `nc 10.15.43.32 3403`
 
