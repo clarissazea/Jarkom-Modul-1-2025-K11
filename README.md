@@ -168,7 +168,7 @@ nformasi ini menjadi bukti langsung bahwa device yang dipasang adalah sebuah `ke
 
 b.) Apa yang Melkor tulis?
 
-Jawaban: 
+Jawaban: `UGx6X3ByMHYxZGVfeTB1cl91czNybjRtZV80bmRfcDRzc3cwcmQ=`
 
 Dari file pcap `hiddenmsg`, kita diminta untuk menemukan teks yang diketik oleh Melkor. Sedangkan, file `.pcapng` tersebut bukan text biasa, tapi kumpulan paket USB HID. Jadi datanya mentah berupa report `8 byte` per keystroke.
 
@@ -193,6 +193,125 @@ Untuk melihat apa yang melkor tulis, kita harus:
 Nah, di file `hiddenmsg` terdapat `410` paket, jika kita decode satu per satu manual, sangat tidak praktis.
 
 Lalu, disini kami memakai python (automasi python dan scapy) untuk membaca `.pcapng` langsung, ambil setiap field `usb.capdata`, translate keycode ke huruf, lalu gabungkan.
+
+<img width="1919" height="1022" alt="image" src="https://github.com/user-attachments/assets/6c81dc7e-3091-4256-b92c-22dee191a80c" />
+
+Pertama, kami menginstall `pip install scapy --break-system-packages` lalu membuat file untuk menyimpan code dibawah: 
+
+```
+from scapy.all import *
+packets = rdpcap('hiddenmsg.pcapng')
+for i in packets:
+        print(i.load[-8:])
+```
+Code tersebut untuk mengimpor semua fungsi `scapy` dan baca file PCAP/PCAPNG dan simpan daftar paket ke variabel packets.
+
+`print(i.load[-8:])` ambil payload mentah dari paket `(i.load)` lalu print `8 byte` terakhir dari payload itu.
+
+Kemudian muncul raw keystroke report dalam bentuk byte, belum diterjemahkan ke huruf (masih hex). 
+<img width="1152" height="1136" alt="image" src="https://github.com/user-attachments/assets/687d2151-ef20-49e0-b12f-ddc9e3f73abb" />
+
+Kemudian kami membuat file baru untuk membaca file dan mendecode message, menggunakan script:
+
+```
+from scapy.all import *
+
+# USB HID Keycode mapping
+HID_MAP = {
+    0x04: ('a', 'A'), 0x05: ('b', 'B'), 0x06: ('c', 'C'), 0x07: ('d', 'D'),
+    0x08: ('e', 'E'), 0x09: ('f', 'F'), 0x0a: ('g', 'G'), 0x0b: ('h', 'H'),
+    0x0c: ('i', 'I'), 0x0d: ('j', 'J'), 0x0e: ('k', 'K'), 0x0f: ('l', 'L'),
+    0x10: ('m', 'M'), 0x11: ('n', 'N'), 0x12: ('o', 'O'), 0x13: ('p', 'P'),
+    0x14: ('q', 'Q'), 0x15: ('r', 'R'), 0x16: ('s', 'S'), 0x17: ('t', 'T'),
+    0x18: ('u', 'U'), 0x19: ('v', 'V'), 0x1a: ('w', 'W'), 0x1b: ('x', 'X'),
+    0x1c: ('y', 'Y'), 0x1d: ('z', 'Z'),
+    0x1e: ('1', '!'), 0x1f: ('2', '@'), 0x20: ('3', '#'), 0x21: ('4', '$'),
+    0x22: ('5', '%'), 0x23: ('6', '^'), 0x24: ('7', '&'), 0x25: ('8', '*'),
+    0x26: ('9', '('), 0x27: ('0', ')'),
+    0x28: ('\n', '\n'),  # Enter
+    0x2c: (' ', ' '),    # Space
+    0x2d: ('-', '_'), 0x2e: ('=', '+'), 0x2f: ('[', '{'), 0x30: (']', '}'),
+    0x31: ('\\', '|'), 0x33: (';', ':'), 0x34: ("'", '"'), 0x35: ('`', '~'),
+    0x36: (',', '<'), 0x37: ('.', '>'), 0x38: ('/', '?')
+}
+
+def decode_hid_data(pcap_file):
+    """Decode USB HID keystroke data from PCAP file"""
+    
+    print(f"[*] Reading PCAP file: {pcap_file}")
+    packets = rdpcap(pcap_file)
+    
+    decoded_text = ""
+    last_key = None
+    
+    print(f"[*] Found {len(packets)} packets")
+    print("[*] Decoding keystrokes...\n")
+    
+    for packet in packets:
+        try:
+            # Extract last 8 bytes (HID data)
+            hid_data = packet.load[-8:]
+            
+            # Parse HID report structure
+            modifier = hid_data[0]  # Byte 0: Modifier keys
+            keycode = hid_data[2]   # Byte 2: Keycode
+            
+            # Skip if no key pressed or same as last key (debounce)
+            if keycode == 0 or keycode == last_key:
+                continue
+                
+            last_key = keycode
+            
+            # Check if keycode is in our mapping
+            if keycode in HID_MAP:
+                # Check for Shift modifier (0x02 or 0x20)
+                is_shift = (modifier & 0x02) != 0
+                char = HID_MAP[keycode][1 if is_shift else 0]
+                decoded_text += char
+                print(f"[+] Key: 0x{keycode:02x} {'(Shift)' if is_shift else ''} -> '{char}'")
+            else:
+                print(f"[?] Unknown keycode: 0x{keycode:02x}")
+                
+        except Exception as e:
+            continue
+    
+    return decoded_text
+
+def main():
+    pcap_file = 'hiddenmsg.pcapng'
+    
+    # Decode the HID data
+    result = decode_hid_data(pcap_file)
+    
+    # Print results
+    print("\n" + "="*50)
+    print("DECODED MESSAGE:")
+    print("="*50)
+    print(result)
+    print("="*50)
+    print(f"\nTotal characters: {len(result)}")
+    
+    # Save to file
+    with open('decoded_message.txt', 'w') as f:
+        f.write(result)
+    print("\n[✓] Saved to: decoded_message.txt")
+
+if __name__ == "__main__":
+    main()
+```
+
+Ketika di run dengan `python3 namafile.py` akan menghasilkan hasil decode yang mana merupakan pesan yg ditulis oleh Melkor.
+
+<img width="1039" height="425" alt="image" src="https://github.com/user-attachments/assets/16f219cb-95cb-401b-9def-5512be511594" />
+
+c.) Apa isi pesan rahasia Melkor?
+
+Jawaban: `Plz_pr0v1de_y0ur_us3rn4me_4nd_p4ssw0rd`
+
+<img width="845" height="789" alt="image" src="https://github.com/user-attachments/assets/2c425ea2-3868-442a-9ba7-9f9b0661fc95" />
+
+Hasil pesan yang dikirim melkor merupakan `base64`, maka kita harus mendecode ulang dan muncul jawaban seperti di gambar.
+
 
 ### 16. Melkor semakin murka ia meletakkan file berbahaya di server milik Manwe. Dari file capture yang ada, identifikasi file apa yang diletakkan oleh Melkor.
 `nc 10.15.43.32 3403`
