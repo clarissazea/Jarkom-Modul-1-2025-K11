@@ -9,7 +9,7 @@ Eru yang terhubung ke NAT1 sebagai sumber internet dimana Eru berperan sebagai R
 
 ### 2. Menghubungkan Eru ke Internet
 
-lakukan perubahan configurasi pada router Eru seperti ini
+lakukan perubahan configurasi pada router Eru seperti ini sesuai dengan prefix ip yg diberikan di sps
 <pre>
     auto eth0
 iface eth0 inet dhcp
