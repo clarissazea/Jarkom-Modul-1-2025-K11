@@ -28,6 +28,45 @@ iface eth2 inet static
 lalu lakukan pengecekan jaringan menggunakan telnet dan <pre> ping google.com -c 5 </pre>
 <img width="1110" height="369" alt="image" src="https://github.com/user-attachments/assets/4d402e81-8b7e-46af-888f-fef410e4825f" />
 
+### 3.Memastikan semua client terhubung satu sama lain
+
+agar semua client terhubung dapat dilakukan konfigurasi untuk setiap client seperti berikut
+a) Melkor
+<pre>
+	auto eth0
+iface eth0 inet static
+	address 10.69.1.2
+	netmask 255.255.255.0
+	gateway 10.69.1.1
+</pre>
+
+b) Manwe
+<pre>
+	auto eth0
+iface eth0 inet static
+	address 10.69.1.3
+	netmask 255.255.255.0
+	gateway 10.69.1.1
+</pre>
+
+c) Varda
+<pre>
+	auto eth0
+iface eth0 inet static
+	address 10.69.2.2
+	netmask 255.255.255.0
+	gateway 10.69.2.1
+</pre>
+
+d) Ulmo
+<pre>
+	auto eth0
+iface eth0 inet static
+	address 10.69.2.3
+	netmask 255.255.255.0
+	gateway 10.69.2.1
+</pre>
+
 
 
 ### 14. Setelah gagal mengakses FTP, Melkor melancarkan serangan brute force terhadap  Manwe. Analisis file capture yang disediakan dan identifikasi upaya brute force Melkor.
