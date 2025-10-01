@@ -2,7 +2,7 @@
 
 Pada praktikum ini, kami menganalisis beberapa file capture jaringan yang disediakan untuk mengungkap berbagai serangan yang dilakukan Melkor terhadap Manwe. Setiap soal mensimulasikan skenario keamanan jaringan, mulai dari serangan brute force, pemasangan perangkat berbahaya, pencurian password melalui keystroke, hingga penyebaran file berbahaya di server maupun web.
 
-### 1. Pertama tama siapkan entitas 
+### 1. Menyiapkan entitas 
 
 Eru yang terhubung ke NAT1 sebagai sumber internet dimana Eru berperan sebagai Router membuat dua Switch/Gateway. Dimana Switch 1 akan menuju ke dua Ainur yaitu Melkor dan Manwe. Sedangkan Switch 2 akan menuju ke dua Ainur lainnya yaitu Varda dan Ulmo. Keempat Ainur tersebut diberi perintah oleh Eru untuk menjadi Client.
 <img width="776" height="501" alt="image" src="https://github.com/user-attachments/assets/9889014a-0dc0-4bf0-b38f-a4b4f5b54631" />
