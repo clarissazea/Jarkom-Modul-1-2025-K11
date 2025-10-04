@@ -95,6 +95,12 @@ untuk melakukan run dapat menggunakan command yg sesuai dengan shell yg sudah di
 	chmod +x /root/setup-client-dns.sh
 </pre>
 
+### REVISI
+di konfigurasi, ditambahkan iptables agar jika mengakses eru tidak perlu melakukan iptables lagi di telnet Eru
+<img width="793" height="498" alt="image" src="https://github.com/user-attachments/assets/32c00035-df56-4469-9701-27b2c108f000" />
+
+
+
 
 
 
